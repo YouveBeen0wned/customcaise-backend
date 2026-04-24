@@ -1,0 +1,19 @@
+{
+  "name": "customcaise-backend",
+  "version": "1.0.0",
+  "description": "Backend for Custom Caise — variant mapping and Printify fulfillment webhook",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "map-variants": "node scripts/build-variant-map.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "dotenv": "^16.4.7"
+  }
+}
