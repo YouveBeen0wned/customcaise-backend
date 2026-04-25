@@ -71,18 +71,22 @@ async function processOrder(order) {
       continue;
     }
 
-    const properties = item.properties || [];
-    const designUrlProp = properties.find(p => p.name === 'design_url');
-    const phoneModelProp = properties.find(p => p.name === 'phone_model');
+    // Look in line item properties first (legacy /cart/add URLs), then fall back
+// to order-level note_attributes (current /cart/{id}:1?attributes[...] URLs).
+const properties     = item.properties     || [];
+const noteAttributes = order.note_attributes || [];
+const findProp = (name) =>
+  properties.find(p => p.name === name)?.value
+  ?? noteAttributes.find(a => a.name === name)?.value;
 
-    if (!designUrlProp?.value) {
-      throw new Error(
-        `Line item "${item.name}" has no design_url property. Order cannot fulfill.`
-      );
-    }
+const designUrl  = findProp('design_url');
+const phoneModel = findProp('phone_model') || mapping.printify_title;
 
-    const designUrl = designUrlProp.value;
-    const phoneModel = phoneModelProp?.value || mapping.printify_title;
+if (!designUrl) {
+  throw new Error(
+    `Line item "${item.name}" has no design_url (checked properties + note_attributes). Order cannot fulfill.`
+  );
+}
 
     console.log(`   🎨 Using design URL for ${phoneModel}: ${designUrl}`);
 
