@@ -103,13 +103,16 @@ async function processOrder(order) {
 
     const designUrl = designUrlProp.value;
     const phoneModel = phoneModelProp?.value || mapping.printify_title;
-
-    console.log(`   🎨 Uploading design for ${phoneModel}...`);
+console.log(`   🎨 Uploading design for ${phoneModel}...`);
     const upload = await uploadImageByUrl(
       designUrl,
       `order-${orderName}-${shopifyVariantId}.png`
     );
     console.log(`      ✓ Printify upload ID: ${upload.id}`);
+
+    // Printify orders API expects the image URL (preview_url), not the upload ID.
+    // The upload response includes both: id (for /products) and preview_url (for /orders).
+    const imageUrl = upload.preview_url || designUrl;
 
     printifyLineItems.push({
       print_provider_id: map.print_provider_id,
@@ -118,7 +121,7 @@ async function processOrder(order) {
       print_areas: {
         front: [
           {
-            src: upload.id,
+            src: imageUrl,
             scale: 1,
             x: 0.5,
             y: 0.5,
@@ -128,7 +131,6 @@ async function processOrder(order) {
       },
       quantity: item.quantity,
     });
-  }
 
   if (printifyLineItems.length === 0) {
     console.log(`   ℹ️  No Custom Caise line items in this order, nothing to fulfill`);
