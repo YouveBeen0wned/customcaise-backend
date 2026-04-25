@@ -4,22 +4,17 @@
 // For each line item from the Custom Caise master product:
 //   1. Extract the design_url from line_item.properties
 //   2. Look up the printify_variant_id from variant-map.json
-//   3. Upload the design image to Printify
-//   4. Create a Printify order for Casestry fulfillment
-//   5. Tag the Shopify order so we can see it was processed
-//
-// Idempotency: Shopify retries webhooks on non-2xx responses, so we
-// tag the order after successful processing and skip already-tagged orders.
+//   3. Create a Printify order referencing the design URL directly
+//   4. Tag the Shopify order so we can see it was processed
 
 import express from 'express';
 import { readFile } from 'node:fs/promises';
 import { verifyShopifyWebhook } from '../lib/verify-shopify-webhook.js';
-import { uploadImageByUrl, createOrder, sendOrderToProduction } from '../services/printify.js';
+import { createOrder, sendOrderToProduction } from '../services/printify.js';
 import { addOrderTag, addOrderNote } from '../services/shopify.js';
 
 const router = express.Router();
 
-// Load variant map once at startup. Fail fast if missing.
 let variantMap = null;
 async function loadVariantMap() {
   if (variantMap) return variantMap;
@@ -30,28 +25,17 @@ async function loadVariantMap() {
 
 const PROCESSED_TAG = 'printify-submitted';
 
-/**
- * POST /webhooks/shopify/orders-create
- *
- * Note: express.raw() is mounted BEFORE verifyShopifyWebhook so the
- * middleware sees the unparsed body for HMAC calculation.
- */
 router.post(
   '/orders-create',
   express.raw({ type: 'application/json' }),
   verifyShopifyWebhook,
   async (req, res) => {
-    // Respond 200 quickly — Shopify has a 5s timeout. Do the real work async.
-    // If processing fails after we've 200'd, we log it and handle it manually;
-    // that's the correct tradeoff vs. making Shopify retry (which causes
-    // duplicate Printify orders if the failure was late in the flow).
     res.status(200).send('ok');
 
     try {
       await processOrder(req.body);
     } catch (err) {
       console.error('❌ Order processing failed:', err);
-      // Tag the order so we can find it manually
       if (req.body?.id) {
         try {
           await addOrderTag(req.body.id, 'printify-error');
@@ -66,10 +50,9 @@ router.post(
 
 async function processOrder(order) {
   const orderId = order.id;
-  const orderName = order.name; // e.g., "#1001"
+  const orderName = order.name;
   console.log(`📦 Processing Shopify order ${orderName} (${orderId})`);
 
-  // Idempotency check
   const existingTags = (order.tags || '').split(',').map(t => t.trim());
   if (existingTags.includes(PROCESSED_TAG)) {
     console.log(`   ↩️  Already processed (has ${PROCESSED_TAG} tag), skipping`);
@@ -77,8 +60,6 @@ async function processOrder(order) {
   }
 
   const map = await loadVariantMap();
-
-  // Collect all Custom Caise line items with their design URLs
   const printifyLineItems = [];
 
   for (const item of order.line_items || []) {
@@ -90,7 +71,6 @@ async function processOrder(order) {
       continue;
     }
 
-    // Extract design_url from line item properties
     const properties = item.properties || [];
     const designUrlProp = properties.find(p => p.name === 'design_url');
     const phoneModelProp = properties.find(p => p.name === 'phone_model');
@@ -103,8 +83,7 @@ async function processOrder(order) {
 
     const designUrl = designUrlProp.value;
     const phoneModel = phoneModelProp?.value || mapping.printify_title;
-// Printify can fetch the design image directly from the URL during order creation.
-    // No need to pre-upload — that's only required for products, not orders.
+
     console.log(`   🎨 Using design URL for ${phoneModel}: ${designUrl}`);
 
     printifyLineItems.push({
@@ -124,8 +103,13 @@ async function processOrder(order) {
       },
       quantity: item.quantity,
     });
+  }
 
-  // Build Printify order payload
+  if (printifyLineItems.length === 0) {
+    console.log(`   ℹ️  No Custom Caise line items in this order, nothing to fulfill`);
+    return;
+  }
+
   const shipping = order.shipping_address || order.billing_address;
   if (!shipping) {
     throw new Error('Order has no shipping or billing address');
@@ -135,7 +119,7 @@ async function processOrder(order) {
     external_id: String(orderId),
     label: orderName,
     line_items: printifyLineItems,
-    shipping_method: 1, // standard shipping
+    shipping_method: 1,
     send_shipping_notification: true,
     address_to: {
       first_name: shipping.first_name || '',
@@ -151,13 +135,10 @@ async function processOrder(order) {
     },
   };
 
-console.log(`   🚚 Creating Printify order with ${printifyLineItems.length} item(s)...`);
+  console.log(`   🚚 Creating Printify order with ${printifyLineItems.length} item(s)...`);
   const printifyOrder = await createOrder(printifyOrderPayload);
   console.log(`      ✓ Printify order ID: ${printifyOrder.id}`);
 
-  // SAFETY: auto-production disabled during testing.
-  // Orders sit in Printify's "On hold" queue until manually approved.
-  // To re-enable, set AUTO_SEND_TO_PRODUCTION=true in env vars.
   if (process.env.AUTO_SEND_TO_PRODUCTION === 'true') {
     console.log(`   🏭 Sending order to production...`);
     await sendOrderToProduction(printifyOrder.id);
@@ -166,7 +147,6 @@ console.log(`   🚚 Creating Printify order with ${printifyLineItems.length} it
     console.log(`   ⏸️  AUTO_SEND_TO_PRODUCTION not enabled — order on hold for manual review`);
   }
 
-  // Tag and note on Shopify side
   await addOrderTag(orderId, PROCESSED_TAG);
   await addOrderNote(orderId, `Printify order created: ${printifyOrder.id}`);
 
