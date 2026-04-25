@@ -161,14 +161,20 @@ async function processOrder(order) {
     },
   };
 
-  console.log(`   🚚 Creating Printify order with ${printifyLineItems.length} item(s)...`);
+console.log(`   🚚 Creating Printify order with ${printifyLineItems.length} item(s)...`);
   const printifyOrder = await createOrder(printifyOrderPayload);
   console.log(`      ✓ Printify order ID: ${printifyOrder.id}`);
 
-  // Automatically send to production (skip the manual review step)
-  console.log(`   🏭 Sending order to production...`);
-  await sendOrderToProduction(printifyOrder.id);
-  console.log(`      ✓ In production`);
+  // SAFETY: auto-production disabled during testing.
+  // Orders sit in Printify's "On hold" queue until manually approved.
+  // To re-enable, set AUTO_SEND_TO_PRODUCTION=true in env vars.
+  if (process.env.AUTO_SEND_TO_PRODUCTION === 'true') {
+    console.log(`   🏭 Sending order to production...`);
+    await sendOrderToProduction(printifyOrder.id);
+    console.log(`      ✓ In production`);
+  } else {
+    console.log(`   ⏸️  AUTO_SEND_TO_PRODUCTION not enabled — order on hold for manual review`);
+  }
 
   // Tag and note on Shopify side
   await addOrderTag(orderId, PROCESSED_TAG);
