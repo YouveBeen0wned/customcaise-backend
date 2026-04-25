@@ -103,16 +103,9 @@ async function processOrder(order) {
 
     const designUrl = designUrlProp.value;
     const phoneModel = phoneModelProp?.value || mapping.printify_title;
-console.log(`   🎨 Uploading design for ${phoneModel}...`);
-    const upload = await uploadImageByUrl(
-      designUrl,
-      `order-${orderName}-${shopifyVariantId}.png`
-    );
-    console.log(`      ✓ Printify upload ID: ${upload.id}`);
-
-    // Printify orders API expects the image URL (preview_url), not the upload ID.
-    // The upload response includes both: id (for /products) and preview_url (for /orders).
-    const imageUrl = upload.preview_url || designUrl;
+// Printify can fetch the design image directly from the URL during order creation.
+    // No need to pre-upload — that's only required for products, not orders.
+    console.log(`   🎨 Using design URL for ${phoneModel}: ${designUrl}`);
 
     printifyLineItems.push({
       print_provider_id: map.print_provider_id,
@@ -121,7 +114,7 @@ console.log(`   🎨 Uploading design for ${phoneModel}...`);
       print_areas: {
         front: [
           {
-            src: imageUrl,
+            src: designUrl,
             scale: 1,
             x: 0.5,
             y: 0.5,
@@ -131,11 +124,6 @@ console.log(`   🎨 Uploading design for ${phoneModel}...`);
       },
       quantity: item.quantity,
     });
-
-  if (printifyLineItems.length === 0) {
-    console.log(`   ℹ️  No Custom Caise line items in this order, nothing to fulfill`);
-    return;
-  }
 
   // Build Printify order payload
   const shipping = order.shipping_address || order.billing_address;
