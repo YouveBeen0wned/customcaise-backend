@@ -43,7 +43,7 @@ export async function getBlueprintVariants() {
  * Paginated — returns { data, current_page, last_page, ... }.
  */
 export async function listProducts(page = 1) {
-  return request(`/shops/${SHOP_ID}/products.json?page=${page}&limit=100`);
+  return request(`/shops/${SHOP_ID}/products.json?page=${page}&limit=50`);
 }
 
 /**

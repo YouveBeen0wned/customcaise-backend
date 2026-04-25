@@ -1,0 +1,618 @@
+{
+  "generated_at": "2026-04-25T04:11:14.710Z",
+  "shopify_product_id": "10351554822443",
+  "printify_product_id": "69ec34bbc6c00cc22d0f098b",
+  "blueprint_id": 841,
+  "print_provider_id": 88,
+  "variant_count": 76,
+  "variants": {
+    "53344963985707": {
+      "shopify_variant_id": 53344963985707,
+      "shopify_title": "Samsung Galaxy S26 / Glossy / Without gift packaging",
+      "shopify_sku": "49068238189365572701",
+      "printify_variant_id": 244355,
+      "printify_title": "Samsung Galaxy S26 / Glossy / Without gift packaging",
+      "price": "25.63"
+    },
+    "53344964018475": {
+      "shopify_variant_id": 53344964018475,
+      "shopify_title": "Samsung Galaxy S26 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "19292218328855362714",
+      "printify_variant_id": 244356,
+      "printify_title": "Samsung Galaxy S26 Plus / Glossy / Without gift packaging",
+      "price": "25.63"
+    },
+    "53344964051243": {
+      "shopify_variant_id": 53344964051243,
+      "shopify_title": "Samsung Galaxy S26 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "20803536241555664150",
+      "printify_variant_id": 244357,
+      "printify_title": "Samsung Galaxy S26 Ultra / Glossy / Without gift packaging",
+      "price": "25.63"
+    },
+    "53344964084011": {
+      "shopify_variant_id": 53344964084011,
+      "shopify_title": "iPhone 16e / Glossy / Without gift packaging",
+      "shopify_sku": "14272039217759612005",
+      "printify_variant_id": 243780,
+      "printify_title": "iPhone 16e / Glossy / Without gift packaging",
+      "price": "25.63"
+    },
+    "53344964116779": {
+      "shopify_variant_id": 53344964116779,
+      "shopify_title": "iPhone 16e / Matte / Without gift packaging",
+      "shopify_sku": "24399472387302696477",
+      "printify_variant_id": 243781,
+      "printify_title": "iPhone 16e / Matte / Without gift packaging",
+      "price": "25.63"
+    },
+    "53344964149547": {
+      "shopify_variant_id": 53344964149547,
+      "shopify_title": "iPhone 17 Air / Glossy / Without gift packaging",
+      "shopify_sku": "17031759549251851468",
+      "printify_variant_id": 130022,
+      "printify_title": "iPhone 17 Air / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964182315": {
+      "shopify_variant_id": 53344964182315,
+      "shopify_title": "iPhone 17 Air / Matte / Without gift packaging",
+      "shopify_sku": "24956456087887151006",
+      "printify_variant_id": 130023,
+      "printify_title": "iPhone 17 Air / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964215083": {
+      "shopify_variant_id": 53344964215083,
+      "shopify_title": "iPhone 17 / Glossy / Without gift packaging",
+      "shopify_sku": "12051500556677064539",
+      "printify_variant_id": 130020,
+      "printify_title": "iPhone 17 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964247851": {
+      "shopify_variant_id": 53344964247851,
+      "shopify_title": "iPhone 17 / Matte / Without gift packaging",
+      "shopify_sku": "26844853957594158209",
+      "printify_variant_id": 130021,
+      "printify_title": "iPhone 17 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964280619": {
+      "shopify_variant_id": 53344964280619,
+      "shopify_title": "iPhone 17 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "30891490054922162816",
+      "printify_variant_id": 130024,
+      "printify_title": "iPhone 17 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964313387": {
+      "shopify_variant_id": 53344964313387,
+      "shopify_title": "iPhone 17 Pro / Matte / Without gift packaging",
+      "shopify_sku": "21705176641308493575",
+      "printify_variant_id": 130025,
+      "printify_title": "iPhone 17 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964346155": {
+      "shopify_variant_id": 53344964346155,
+      "shopify_title": "iPhone 17 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "11266641524318465850",
+      "printify_variant_id": 130026,
+      "printify_title": "iPhone 17 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964378923": {
+      "shopify_variant_id": 53344964378923,
+      "shopify_title": "iPhone 17 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "20089564745784614712",
+      "printify_variant_id": 130027,
+      "printify_title": "iPhone 17 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964411691": {
+      "shopify_variant_id": 53344964411691,
+      "shopify_title": "iPhone 16 / Glossy / Without gift packaging",
+      "shopify_sku": "83177426102485625872",
+      "printify_variant_id": 112740,
+      "printify_title": "iPhone 16 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964444459": {
+      "shopify_variant_id": 53344964444459,
+      "shopify_title": "iPhone 16 / Matte / Without gift packaging",
+      "shopify_sku": "27634773750647498548",
+      "printify_variant_id": 112741,
+      "printify_title": "iPhone 16 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964477227": {
+      "shopify_variant_id": 53344964477227,
+      "shopify_title": "iPhone 16 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "31829819251884323954",
+      "printify_variant_id": 112736,
+      "printify_title": "iPhone 16 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964509995": {
+      "shopify_variant_id": 53344964509995,
+      "shopify_title": "iPhone 16 Pro / Matte / Without gift packaging",
+      "shopify_sku": "15987938171432326865",
+      "printify_variant_id": 112737,
+      "printify_title": "iPhone 16 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964542763": {
+      "shopify_variant_id": 53344964542763,
+      "shopify_title": "iPhone 16 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "17485089005661912280",
+      "printify_variant_id": 112738,
+      "printify_title": "iPhone 16 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964575531": {
+      "shopify_variant_id": 53344964575531,
+      "shopify_title": "iPhone 16 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "79298486779473792411",
+      "printify_variant_id": 112739,
+      "printify_title": "iPhone 16 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964608299": {
+      "shopify_variant_id": 53344964608299,
+      "shopify_title": "iPhone 16 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "26153205174272969351",
+      "printify_variant_id": 112742,
+      "printify_title": "iPhone 16 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964641067": {
+      "shopify_variant_id": 53344964641067,
+      "shopify_title": "iPhone 16 Plus / Matte / Without gift packaging",
+      "shopify_sku": "17731709188862855548",
+      "printify_variant_id": 112743,
+      "printify_title": "iPhone 16 Plus / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964673835": {
+      "shopify_variant_id": 53344964673835,
+      "shopify_title": "iPhone 15 / Glossy / Without gift packaging",
+      "shopify_sku": "19062237606065268870",
+      "printify_variant_id": 104004,
+      "printify_title": "iPhone 15 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964706603": {
+      "shopify_variant_id": 53344964706603,
+      "shopify_title": "iPhone 15 / Matte / Without gift packaging",
+      "shopify_sku": "10790813371351850170",
+      "printify_variant_id": 104005,
+      "printify_title": "iPhone 15 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964739371": {
+      "shopify_variant_id": 53344964739371,
+      "shopify_title": "iPhone 15 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "18050981321066114141",
+      "printify_variant_id": 104006,
+      "printify_title": "iPhone 15 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964772139": {
+      "shopify_variant_id": 53344964772139,
+      "shopify_title": "iPhone 15 Pro / Matte / Without gift packaging",
+      "shopify_sku": "28879473113319753699",
+      "printify_variant_id": 104007,
+      "printify_title": "iPhone 15 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964804907": {
+      "shopify_variant_id": 53344964804907,
+      "shopify_title": "iPhone 15 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "91644250138354857991",
+      "printify_variant_id": 104010,
+      "printify_title": "iPhone 15 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964837675": {
+      "shopify_variant_id": 53344964837675,
+      "shopify_title": "iPhone 15 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "30270613868648966233",
+      "printify_variant_id": 104011,
+      "printify_title": "iPhone 15 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964870443": {
+      "shopify_variant_id": 53344964870443,
+      "shopify_title": "iPhone 15 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "30021878905855323917",
+      "printify_variant_id": 104008,
+      "printify_title": "iPhone 15 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964903211": {
+      "shopify_variant_id": 53344964903211,
+      "shopify_title": "iPhone 15 Plus / Matte / Without gift packaging",
+      "shopify_sku": "99721931018364243394",
+      "printify_variant_id": 104009,
+      "printify_title": "iPhone 15 Plus / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964935979": {
+      "shopify_variant_id": 53344964935979,
+      "shopify_title": "iPhone 14 / Glossy / Without gift packaging",
+      "shopify_sku": "18480448030340115867",
+      "printify_variant_id": 104012,
+      "printify_title": "iPhone 14 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344964968747": {
+      "shopify_variant_id": 53344964968747,
+      "shopify_title": "iPhone 14 / Matte / Without gift packaging",
+      "shopify_sku": "29473840458493333648",
+      "printify_variant_id": 104013,
+      "printify_title": "iPhone 14 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965001515": {
+      "shopify_variant_id": 53344965001515,
+      "shopify_title": "iPhone 14 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "59998274922615753754",
+      "printify_variant_id": 104014,
+      "printify_title": "iPhone 14 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965034283": {
+      "shopify_variant_id": 53344965034283,
+      "shopify_title": "iPhone 14 Pro / Matte / Without gift packaging",
+      "shopify_sku": "10597124094097839619",
+      "printify_variant_id": 104015,
+      "printify_title": "iPhone 14 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965067051": {
+      "shopify_variant_id": 53344965067051,
+      "shopify_title": "iPhone 14 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "33867392680748253026",
+      "printify_variant_id": 104018,
+      "printify_title": "iPhone 14 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965099819": {
+      "shopify_variant_id": 53344965099819,
+      "shopify_title": "iPhone 14 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "31500609612736211417",
+      "printify_variant_id": 104019,
+      "printify_title": "iPhone 14 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965132587": {
+      "shopify_variant_id": 53344965132587,
+      "shopify_title": "iPhone 14 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "50122692046614415987",
+      "printify_variant_id": 104016,
+      "printify_title": "iPhone 14 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965165355": {
+      "shopify_variant_id": 53344965165355,
+      "shopify_title": "iPhone 14 Plus / Matte / Without gift packaging",
+      "shopify_sku": "20803631984581070977",
+      "printify_variant_id": 104017,
+      "printify_title": "iPhone 14 Plus / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965198123": {
+      "shopify_variant_id": 53344965198123,
+      "shopify_title": "iPhone 13 / Glossy / Without gift packaging",
+      "shopify_sku": "23442599204708780108",
+      "printify_variant_id": 77016,
+      "printify_title": "iPhone 13 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965230891": {
+      "shopify_variant_id": 53344965230891,
+      "shopify_title": "iPhone 13 / Matte / Without gift packaging",
+      "shopify_sku": "22600426444946419863",
+      "printify_variant_id": 77017,
+      "printify_title": "iPhone 13 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965263659": {
+      "shopify_variant_id": 53344965263659,
+      "shopify_title": "iPhone 13 Mini / Glossy / Without gift packaging",
+      "shopify_sku": "30197551679738773936",
+      "printify_variant_id": 77018,
+      "printify_title": "iPhone 13 Mini / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965296427": {
+      "shopify_variant_id": 53344965296427,
+      "shopify_title": "iPhone 13 Mini / Matte / Without gift packaging",
+      "shopify_sku": "19863658010657741618",
+      "printify_variant_id": 77019,
+      "printify_title": "iPhone 13 Mini / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965329195": {
+      "shopify_variant_id": 53344965329195,
+      "shopify_title": "iPhone 13 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "21676418998710366466",
+      "printify_variant_id": 77020,
+      "printify_title": "iPhone 13 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965361963": {
+      "shopify_variant_id": 53344965361963,
+      "shopify_title": "iPhone 13 Pro / Matte / Without gift packaging",
+      "shopify_sku": "22124682880744996170",
+      "printify_variant_id": 77021,
+      "printify_title": "iPhone 13 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965394731": {
+      "shopify_variant_id": 53344965394731,
+      "shopify_title": "iPhone 13 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "16203144647309192313",
+      "printify_variant_id": 77022,
+      "printify_title": "iPhone 13 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965427499": {
+      "shopify_variant_id": 53344965427499,
+      "shopify_title": "iPhone 13 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "32198796236950492813",
+      "printify_variant_id": 77023,
+      "printify_title": "iPhone 13 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965460267": {
+      "shopify_variant_id": 53344965460267,
+      "shopify_title": "iPhone 12 / Glossy / Without gift packaging",
+      "shopify_sku": "12886021021559802123",
+      "printify_variant_id": 79484,
+      "printify_title": "iPhone 12 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965493035": {
+      "shopify_variant_id": 53344965493035,
+      "shopify_title": "iPhone 12 / Matte / Without gift packaging",
+      "shopify_sku": "23720425451992189598",
+      "printify_variant_id": 79485,
+      "printify_title": "iPhone 12 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965525803": {
+      "shopify_variant_id": 53344965525803,
+      "shopify_title": "iPhone 12 Mini / Glossy / Without gift packaging",
+      "shopify_sku": "22699320858305701169",
+      "printify_variant_id": 79486,
+      "printify_title": "iPhone 12 Mini / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965558571": {
+      "shopify_variant_id": 53344965558571,
+      "shopify_title": "iPhone 12 Mini / Matte / Without gift packaging",
+      "shopify_sku": "66342718073661695692",
+      "printify_variant_id": 79487,
+      "printify_title": "iPhone 12 Mini / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965591339": {
+      "shopify_variant_id": 53344965591339,
+      "shopify_title": "iPhone 12 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "45282730587682917193",
+      "printify_variant_id": 79488,
+      "printify_title": "iPhone 12 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965624107": {
+      "shopify_variant_id": 53344965624107,
+      "shopify_title": "iPhone 12 Pro / Matte / Without gift packaging",
+      "shopify_sku": "17972192424822128322",
+      "printify_variant_id": 79489,
+      "printify_title": "iPhone 12 Pro / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965656875": {
+      "shopify_variant_id": 53344965656875,
+      "shopify_title": "iPhone 12 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "29845958647455804486",
+      "printify_variant_id": 79490,
+      "printify_title": "iPhone 12 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965689643": {
+      "shopify_variant_id": 53344965689643,
+      "shopify_title": "iPhone 12 Pro Max / Matte / Without gift packaging",
+      "shopify_sku": "53712902478133234212",
+      "printify_variant_id": 79491,
+      "printify_title": "iPhone 12 Pro Max / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965722411": {
+      "shopify_variant_id": 53344965722411,
+      "shopify_title": "iPhone 11 Pro / Glossy / Without gift packaging",
+      "shopify_sku": "22438179644669417475",
+      "printify_variant_id": 79480,
+      "printify_title": "iPhone 11 Pro / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965755179": {
+      "shopify_variant_id": 53344965755179,
+      "shopify_title": "iPhone 11 Pro Max / Glossy / Without gift packaging",
+      "shopify_sku": "14203794341611013373",
+      "printify_variant_id": 79482,
+      "printify_title": "iPhone 11 Pro Max / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965787947": {
+      "shopify_variant_id": 53344965787947,
+      "shopify_title": "Samsung Galaxy S25 / Glossy / Without gift packaging",
+      "shopify_sku": "78386771330312836750",
+      "printify_variant_id": 148751,
+      "printify_title": "Samsung Galaxy S25 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965820715": {
+      "shopify_variant_id": 53344965820715,
+      "shopify_title": "Samsung Galaxy S25 / Matte / Without gift packaging",
+      "shopify_sku": "19127103429063820430",
+      "printify_variant_id": 148752,
+      "printify_title": "Samsung Galaxy S25 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965853483": {
+      "shopify_variant_id": 53344965853483,
+      "shopify_title": "Samsung Galaxy S25 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "91514260183685660961",
+      "printify_variant_id": 148753,
+      "printify_title": "Samsung Galaxy S25 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965886251": {
+      "shopify_variant_id": 53344965886251,
+      "shopify_title": "Samsung Galaxy S25 Plus / Matte / Without gift packaging",
+      "shopify_sku": "11523364157228444700",
+      "printify_variant_id": 148754,
+      "printify_title": "Samsung Galaxy S25 Plus / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965919019": {
+      "shopify_variant_id": 53344965919019,
+      "shopify_title": "Samsung Galaxy S25 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "26918452896988451062",
+      "printify_variant_id": 148755,
+      "printify_title": "Samsung Galaxy S25 Ultra / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965951787": {
+      "shopify_variant_id": 53344965951787,
+      "shopify_title": "Samsung Galaxy S25 Ultra / Matte / Without gift packaging",
+      "shopify_sku": "10461763416861958283",
+      "printify_variant_id": 148756,
+      "printify_title": "Samsung Galaxy S25 Ultra / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344965984555": {
+      "shopify_variant_id": 53344965984555,
+      "shopify_title": "Samsung Galaxy S24 / Glossy / Without gift packaging",
+      "shopify_sku": "21474178861117353717",
+      "printify_variant_id": 148757,
+      "printify_title": "Samsung Galaxy S24 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966017323": {
+      "shopify_variant_id": 53344966017323,
+      "shopify_title": "Samsung Galaxy S24 / Matte / Without gift packaging",
+      "shopify_sku": "31496722217178450527",
+      "printify_variant_id": 148758,
+      "printify_title": "Samsung Galaxy S24 / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966050091": {
+      "shopify_variant_id": 53344966050091,
+      "shopify_title": "Samsung Galaxy S24 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "17261219482099632427",
+      "printify_variant_id": 148759,
+      "printify_title": "Samsung Galaxy S24 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966082859": {
+      "shopify_variant_id": 53344966082859,
+      "shopify_title": "Samsung Galaxy S24 Plus / Matte / Without gift packaging",
+      "shopify_sku": "13126428936544058204",
+      "printify_variant_id": 148760,
+      "printify_title": "Samsung Galaxy S24 Plus / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966115627": {
+      "shopify_variant_id": 53344966115627,
+      "shopify_title": "Samsung Galaxy S24 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "98836864650374310614",
+      "printify_variant_id": 148761,
+      "printify_title": "Samsung Galaxy S24 Ultra / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966148395": {
+      "shopify_variant_id": 53344966148395,
+      "shopify_title": "Samsung Galaxy S24 Ultra / Matte / Without gift packaging",
+      "shopify_sku": "35870968984439444214",
+      "printify_variant_id": 148762,
+      "printify_title": "Samsung Galaxy S24 Ultra / Matte / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966181163": {
+      "shopify_variant_id": 53344966181163,
+      "shopify_title": "Samsung Galaxy S23 / Glossy / Without gift packaging",
+      "shopify_sku": "13401589322823947329",
+      "printify_variant_id": 240593,
+      "printify_title": "Samsung Galaxy S23 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966213931": {
+      "shopify_variant_id": 53344966213931,
+      "shopify_title": "Samsung Galaxy S23 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "32093177581979897511",
+      "printify_variant_id": 240594,
+      "printify_title": "Samsung Galaxy S23 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966246699": {
+      "shopify_variant_id": 53344966246699,
+      "shopify_title": "Samsung Galaxy S23 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "59024301713107259984",
+      "printify_variant_id": 240595,
+      "printify_title": "Samsung Galaxy S23 Ultra / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966279467": {
+      "shopify_variant_id": 53344966279467,
+      "shopify_title": "Samsung Galaxy S22 / Glossy / Without gift packaging",
+      "shopify_sku": "11252694069093189005",
+      "printify_variant_id": 87237,
+      "printify_title": "Samsung Galaxy S22 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966312235": {
+      "shopify_variant_id": 53344966312235,
+      "shopify_title": "Samsung Galaxy S22 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "10785382849695720240",
+      "printify_variant_id": 87239,
+      "printify_title": "Samsung Galaxy S22 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966345003": {
+      "shopify_variant_id": 53344966345003,
+      "shopify_title": "Samsung Galaxy S22 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "27191443817680540611",
+      "printify_variant_id": 87241,
+      "printify_title": "Samsung Galaxy S22 Ultra / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966377771": {
+      "shopify_variant_id": 53344966377771,
+      "shopify_title": "Samsung Galaxy S21 / Glossy / Without gift packaging",
+      "shopify_sku": "17926281102630582282",
+      "printify_variant_id": 77024,
+      "printify_title": "Samsung Galaxy S21 / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966410539": {
+      "shopify_variant_id": 53344966410539,
+      "shopify_title": "Samsung Galaxy S21 Plus / Glossy / Without gift packaging",
+      "shopify_sku": "10983846116136071449",
+      "printify_variant_id": 77026,
+      "printify_title": "Samsung Galaxy S21 Plus / Glossy / Without gift packaging",
+      "price": "37.99"
+    },
+    "53344966443307": {
+      "shopify_variant_id": 53344966443307,
+      "shopify_title": "Samsung Galaxy S21 Ultra / Glossy / Without gift packaging",
+      "shopify_sku": "51175485056090560687",
+      "printify_variant_id": 77028,
+      "printify_title": "Samsung Galaxy S21 Ultra / Glossy / Without gift packaging",
+      "price": "37.99"
+    }
+  }
+}
